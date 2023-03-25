@@ -1,0 +1,94 @@
+{
+    "intents": [
+      {
+        "tag": "saludo",
+        "patterns": [
+          "Hola",
+          "Buenas",
+          "¿Cómo estás?",
+          "¿Hay alguien ahí?",
+          "Hola, ¿en qué puedo ayudarte?",
+          "Buen día"
+        ],
+        "responses": [
+          "¡Hola! ¿En qué puedo ayudarte?",
+          "¡Hola! Gracias por visitarnos.",
+          "¡Buen día! ¿En qué puedo ayudarte?",
+          "¡Hola! ¿Cómo puedo asistirte?"
+        ]
+      },
+      {
+        "tag": "despedida",
+        "patterns": ["Adiós", "Hasta luego", "Nos vemos"],
+        "responses": [
+          "¡Hasta luego! ¡Gracias por visitarnos!",
+          "¡Que tengas un buen día!",
+          "¡Adiós! ¡Vuelve pronto!"
+        ]
+      },
+      {
+        "tag": "gracias",
+        "patterns": [
+          "Gracias",
+          "¡Gracias!",
+          "Eso es útil",
+          "¡Muchas gracias!"
+        ],
+        "responses": [
+          "¡De nada! Si necesitas algo más, no dudes en preguntar.",
+          "¡Siempre estoy aquí para ayudar!",
+          "¡Fue un placer ayudarte!"
+        ]
+      },
+      {
+        "tag": "servicios",
+        "patterns": [
+          "¿Qué servicios ofreces?",
+          "¿Qué tipo de consultoría proporcionas?",
+          "¿En qué áreas de TI trabajas?"
+        ],
+        "responses": [
+          "Ofrecemos servicios de consultoría en áreas como desarrollo de software, redes, seguridad informática, entre otros.",
+          "Proporcionamos servicios de consultoría en múltiples áreas de TI, incluyendo infraestructura, nube, y más."
+        ]
+      },
+      {
+        "tag": "pagos",
+        "patterns": [
+          "¿Aceptan tarjetas de crédito?",
+          "¿Aceptan Mastercard?",
+          "¿Se puede pagar con PayPal?",
+          "¿Sólo aceptan efectivo?"
+        ],
+        "responses": [
+          "Aceptamos VISA, Mastercard y PayPal",
+          "Aceptamos la mayoría de las tarjetas de crédito principales y PayPal"
+        ]
+      },
+      {
+        "tag": "tiempo",
+        "patterns": [
+          "¿Cuánto tiempo lleva la entrega?",
+          "¿Cuánto tiempo tarda el envío?",
+          "¿Cuándo llegará mi entrega?"
+        ],
+        "responses": [
+          "La entrega suele tardar de 2 a 4 días hábiles.",
+          "El envío suele tardar de 2 a 4 días hábiles."
+        ]
+      },
+      {
+        "tag": "divertido",
+        "patterns": [
+          "¡Cuéntame un chiste!",
+          "¡Dime algo gracioso!",
+          "¿Conoces algún chiste?"
+        ],
+        "responses": [
+          "¿Sabes cómo llamas a un programador sin café? ¡Descompilado!",
+          "¿Por qué los programadores prefieren la oscuridad y el frío? ¡Porque trabajan mejor en la luz tenue!"
+        ]
+      }
+    ]
+  }
+  

@@ -1,8 +1,9 @@
 import nltk
-from nltk.stem.porter import PorterStemmer
-# nltk.download('punkt')  # Solo la primera vez / Paquete con un tokenizer para entrenar
+from nltk.stem import SnowballStemmer
+# Solo la primera vez / Paquete con un tokenizer para entrenar
+nltk.download('punkt')
 
-stemmer = PorterStemmer()
+stemmer = SnowballStemmer('spanish')
 
 
 def tokenize(sentense):

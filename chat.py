@@ -26,17 +26,12 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = "Juan"
-print("Hola en que te puedo ayudar! (Escribí 'salir' para salir)")
-while True:
-    # sentence = "do you use credit cards?"
-    sentence = input("Vos: ")
-    if sentence == "salir":
-        break
 
-    sentence = tokenize(sentence)
+
+def get_response(msg):
+    sentence = tokenize(msg)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
-    # Por que bag of words devuelve un numpy array
     X = torch.from_numpy(X).to(device)
 
     output = model(X)
@@ -49,6 +44,6 @@ while True:
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
-    else:
-        print(f"{bot_name}: Perdón pero no entiendo tu consulta...")
+                return random.choice(intent['responses'])
+
+    return "Disculpá, no fui entrenado con tanta información, ¿podrías intentar reformular tu pregunta?."

@@ -1,4 +1,6 @@
-# python-pytorch-chatbot
+# Chatbot
+
+
 Repositorio para proyecto de implementación de práctica de un chatbot en python usando la librería pytorch
 
 Para poder entrenar el bot solo se debe modificar el archivo llamado intents.json agregando categoarias con sus preguntas y respuestas.
